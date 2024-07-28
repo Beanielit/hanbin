@@ -35,7 +35,7 @@ module.exports = {
             "error",
             {
                 minLength: 4,
-                skipWords: ["noreferrer", "noopener", "vercel", "Readonly", "latin", "Parens"]
+                skipWords: ["noreferrer", "noopener", "Readonly", "latin", "Parens", "hanbin", "unoptimized", "lang"]
             }
         ],
         "import/order": [
