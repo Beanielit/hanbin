@@ -1,5 +1,5 @@
 export interface LocaleDictionary {
-  uiMessage: {
-    name: string;
-  }
+    uiMessage: {
+        name: string;
+    };
 }

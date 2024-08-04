@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import {useLocale} from "@/provider/LocaleProvider";
+import { useLocale } from "@/provider/LocaleProvider";
 
 const Page = () => {
     const locale = useLocale();

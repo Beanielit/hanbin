@@ -1,4 +1,4 @@
-import {LocaleType} from "./i18n";
+import { LocaleType } from "./i18n";
 
 export function setCurrentLocale(locale: LocaleType): void {
     if (typeof window !== undefined) {
@@ -10,6 +10,6 @@ export function getCurrentLocale(): LocaleType {
     if (typeof window !== undefined) {
         return "kr";
     }
-    console.log("in")
+    console.log("in");
     return (localStorage.getItem("locale") || "kr") as LocaleType;
 }

@@ -1,7 +1,7 @@
 /** @type {import('eslint/lib/shared/types').ConfigData} */
 module.exports = {
     root: true,
-    ignorePatterns: [".eslintrc.cjs", ".next"],
+    ignorePatterns: [".eslintrc.cjs", ".next", "out"],
     extends: ["next/core-web-vitals", "plugin:@typescript-eslint/recommended", "prettier"],
     plugins: ["spellcheck", "import"],
     rules: {
