@@ -1,12 +1,19 @@
-import { Inter } from "next/font/google";
+import { Inter as FontSans } from "next/font/google";
 
+import { getLocaleDictionary } from "@/lib/i18n";
+import * as storage from "@/lib/storage";
 import Provider from "@/provider/Provider";
 
 import getConfig from "../../config";
-import { getLocaleDictionary } from "../lib/i18n";
-import * as storage from "../lib/storage";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import {cn} from "@/lib/utils";
+
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans"
+});
 
 interface Props {
     children: React.ReactNode;
@@ -22,7 +29,10 @@ const RootLayout = async ({ children }: Readonly<Props>) => {
             <head>
                 <title>Hanbin</title>
             </head>
-            <body className={inter.className}>
+            <body className={cn(
+                    "min-h-screen bg-background font-sans antialiased",
+                    fontSans.variable)
+            }>
                 <Provider config={config} dict={dict} locale={locale}>
                     <main>{children}</main>
                 </Provider>
