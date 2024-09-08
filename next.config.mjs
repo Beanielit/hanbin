@@ -3,7 +3,8 @@
 const nextConfig = {
     reactStrictMode: true,
     output: "export",
-    assetsDir: "/hanbin/",
+    ...{ ...(process.env.ENVIRONMENT === "local" && { basePath: "/hanbin" }) },
+    ...{ ...(process.env.ENVIRONMENT === "local" && { assetPrefix: "/hanbin/" }) },
     images: {
         unoptimized: true
     }
