@@ -3,7 +3,7 @@
 const nextConfig = {
     reactStrictMode: true,
     output: "export",
-    // basePath: "/hanbin",
+    assetsDir: "/hanbin/",
     images: {
         unoptimized: true
     }
