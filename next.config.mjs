@@ -3,8 +3,8 @@
 const nextConfig = {
     reactStrictMode: true,
     output: "export",
-    ...{ ...(process.env.ENVIRONMENT === "local" && { basePath: "/hanbin" }) },
-    ...{ ...(process.env.ENVIRONMENT === "local" && { assetPrefix: "/hanbin/" }) },
+    basePath: process.env.NEXT_PUBLIC_ENVIRONMENT === "local" ? "" : "/hanbin",
+    assetPrefix: process.env.NEXT_PUBLIC_ENVIRONMENT === "local" ? "" : "/hanbin/",
     images: {
         unoptimized: true
     }

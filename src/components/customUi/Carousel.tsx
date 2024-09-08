@@ -4,12 +4,15 @@ import Image from "next/image";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { useConfig } from "@/provider/ConfigProvider";
 
 // interface CustomCarouselProps {
 //   item: { src: string; alt: string };
 // }
 
 const CustomCarousel = () => {
+    const { config } = useConfig();
+    const imagePrefix = config.environment === "local" ? "" : "/hanbin";
     return (
         <Carousel className="w-full max-w-screen-sm mx-auto">
             <CarouselContent>
@@ -22,7 +25,7 @@ const CustomCarousel = () => {
                                     <Image
                                         alt="profile"
                                         height={500}
-                                        src={`/profile/profile_${i + 1}.jpg`}
+                                        src={`${imagePrefix}/profile/profile_${i + 1}.jpg`}
                                         width={500}
                                     />
                                 </CardContent>
