@@ -1,5 +1,15 @@
 {
-    "uiMessage": {
+    "ui": {
         "name": "Hanbin Chang"
+    },
+    "menu": {
+        "profile": "Profile",
+        "photo": "Photo",
+        "contact": "Contact",
+        "language": "Language",
+        "languageLabel": "Choose your language",
+        "english": "English",
+        "korean": "Korean",
+        "japanese": "Japanese"
     }
 }

@@ -1,5 +1,15 @@
 export interface LocaleDictionary {
-    uiMessage: {
+    ui: {
         name: string;
+    };
+    menu: {
+        profile: string;
+        photo: string;
+        contact: string;
+        language: string;
+        languageLabel: string;
+        english: string;
+        korean: string;
+        japanese: string;
     };
 }

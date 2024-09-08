@@ -1,5 +1,15 @@
 {
-    "uiMessage": {
+    "ui": {
         "name": "ジャン ハンビン"
+    },
+    "menu": {
+        "profile": "プロファイル",
+        "photo": "写真",
+        "contact": "コンタクト",
+        "language": "言語",
+        "languageLabel": "言語を選択してください",
+        "english": "英語(English)",
+        "korean": "韓国語(Korean)",
+        "japanese": "日本語(Japanese)"
     }
 }

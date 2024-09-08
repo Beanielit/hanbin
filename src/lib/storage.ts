@@ -8,8 +8,7 @@ export function setCurrentLocale(locale: LocaleType): void {
 
 export function getCurrentLocale(): LocaleType {
     if (typeof window !== undefined) {
-        return "kr";
+        return "en";
     }
-    console.log("in");
-    return (localStorage.getItem("locale") || "kr") as LocaleType;
+    return (localStorage.getItem("locale") || "en") as LocaleType;
 }
