@@ -11,5 +11,8 @@
         "english": "영어(English)",
         "korean": "한국어(Korean)",
         "japanese": "일본어(Japanese)"
+    },
+    "description": {
+        "contact": "연락 설명을 추가해 주세요."
     }
 }

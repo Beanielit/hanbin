@@ -1,9 +1,9 @@
 "use client";
 import { createContext, PropsWithChildren, useCallback, useContext, useState } from "react";
 
+import { getLocaleDictionary, LocaleType } from "@/lib/i18n";
 import { LocaleDictionary } from "@/lib/i18n/LocaleDictionary";
 
-import { getLocaleDictionary, LocaleType } from "../lib/i18n";
 import * as storage from "../lib/storage";
 
 interface LocaleContext {

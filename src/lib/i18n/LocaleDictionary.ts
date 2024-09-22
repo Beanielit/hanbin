@@ -12,4 +12,7 @@ export interface LocaleDictionary {
         korean: string;
         japanese: string;
     };
+    description: {
+        contact: string;
+    };
 }

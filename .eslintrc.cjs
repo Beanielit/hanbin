@@ -55,7 +55,10 @@ module.exports = {
                     "english",
                     "korean",
                     "japanese",
-                    "Checkbox"
+                    "Checkbox",
+                    "mailto",
+                    "gmail",
+                    "hanbinj430"
                 ]
             }
         ],

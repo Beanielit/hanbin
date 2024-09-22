@@ -11,5 +11,8 @@
         "english": "English",
         "korean": "Korean",
         "japanese": "Japanese"
+    },
+    "description": {
+        "contact": "add contact description"
     }
 }

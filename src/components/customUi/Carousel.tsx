@@ -12,7 +12,6 @@ import { useConfig } from "@/provider/ConfigProvider";
 
 const CustomCarousel = () => {
     const { config } = useConfig();
-    const imagePrefix = config.environment === "local" ? "" : "/hanbin";
     return (
         <Carousel className="w-full max-w-screen-sm mx-auto">
             <CarouselContent>
@@ -25,7 +24,7 @@ const CustomCarousel = () => {
                                     <Image
                                         alt="profile"
                                         height={500}
-                                        src={`${imagePrefix}/profile/profile_${i + 1}.jpg`}
+                                        src={`${config.imagePrefix}/profile/profile_${i + 1}.jpg`}
                                         width={500}
                                     />
                                 </CardContent>

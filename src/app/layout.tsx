@@ -22,7 +22,7 @@ interface Props {
 }
 
 export const metadata: Metadata = {
-    title: "hanbin's profile",
+    title: "Hanbin's profile",
     description: "Hanbin's profile"
 };
 
@@ -31,7 +31,7 @@ const RootLayout = async ({ children }: Readonly<Props>) => {
     const locale = storage.getCurrentLocale();
     const dict = await getLocaleDictionary(locale);
     return (
-        <html lang="en">
+        <html className="scroll-smooth" lang="en">
             <head>
                 <title>Hanbin</title>
             </head>
