@@ -1,6 +1,7 @@
 import { ColorMode } from "@/lib/colors";
 import { LocaleType } from "@/lib/i18n";
 import { LocaleDictionary } from "@/lib/i18n/LocaleDictionary";
+import ThemeProvider from "@/provider/ThemeProvider";
 
 import { ConfigProvider } from "./ConfigProvider";
 import { LocaleProvider } from "./LocaleProvider";
@@ -18,9 +19,11 @@ const Provider: React.FC<Props> = props => {
     const { children, dict, locale, config } = props;
 
     return (
-        <LocaleProvider dict={dict} locale={locale}>
-            <ConfigProvider config={config}>{children}</ConfigProvider>
-        </LocaleProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange enableSystem>
+            <LocaleProvider dict={dict} locale={locale}>
+                <ConfigProvider config={config}>{children}</ConfigProvider>
+            </LocaleProvider>
+        </ThemeProvider>
     );
 };
 
