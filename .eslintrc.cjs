@@ -58,7 +58,9 @@ module.exports = {
                     "Checkbox",
                     "mailto",
                     "gmail",
-                    "hanbinj430"
+                    "hanbinj430",
+                    "accelerometer",
+                    "autoplay"
                 ]
             }
         ],

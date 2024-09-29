@@ -19,7 +19,7 @@ const Provider: React.FC<Props> = props => {
     const { children, dict, locale, config } = props;
 
     return (
-        <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange enableSystem>
             <LocaleProvider dict={dict} locale={locale}>
                 <ConfigProvider config={config}>{children}</ConfigProvider>
             </LocaleProvider>
